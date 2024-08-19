@@ -36,3 +36,9 @@ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 ```
 5. Tener levantados los microservicios que se van a consumir
 6. Levantar proyecto con `npm run start:dev`
+
+
+#Build de docker
+``` bash
+docker compose up --build
+```
