@@ -20,6 +20,9 @@ async function bootstrap() {
   app.useGlobalFilters(new RpcCustomExceptionFilter());
 
   await app.listen(envs.port);
+
+  logger.log('Hola mundo, primer cambio!')
+
   logger.log(`Server running on ${envs.port}`);
 }
 bootstrap();
